@@ -1,0 +1,12 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+
+    <p class="answer-text">Question: <br>{{ question }}</p>
+    <p class = "answer-text">Answer: <br>{{ answer }}</p>
+
+    <form class="contact100-form validate-form" action="/predict/" method="POST">
+
+    <a href="/predict/">Enter new question and context</a>
+        </form>
+{% endblock %}
